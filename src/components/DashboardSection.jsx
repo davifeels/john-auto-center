@@ -17,33 +17,13 @@ import {
 } from 'lucide-react';
 import {
   Chart as ChartJS,
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  LineElement,
-  BarElement,
-  ArcElement,
-  Title,
-  Tooltip,
-  Legend,
-  Filler
+  registerables
 } from 'chart.js';
 import { Bar, Doughnut, Line } from 'react-chartjs-2';
 import { DASHBOARD_STATS } from '../data/mockData';
 
-// Register Chart.js components
-ChartJS.register(
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  LineElement,
-  BarElement,
-  ArcElement,
-  Title,
-  Tooltip,
-  Legend,
-  Filler
-);
+// Register all Chart.js controllers, scales and plugins
+ChartJS.register(...registerables);
 
 export default function DashboardSection() {
   const [selectedPeriod, setSelectedPeriod] = useState('30d');

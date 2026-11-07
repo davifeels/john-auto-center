@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: './', // Permite funcionamento em qualquer subdiretório do GitHub Pages (ex: /repo-name/)
+  base: '/john-auto-center/', // Caminho canônico para https://davifeels.github.io/john-auto-center/
   server: {
     port: 3000,
     open: false
