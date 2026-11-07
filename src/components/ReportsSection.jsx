@@ -34,10 +34,10 @@ export default function ReportsSection() {
   return (
     <section id="relatorios" className="py-28 bg-dark-950 relative overflow-hidden">
       {/* 90% Wide Container */}
-      <div className="w-[92%] max-w-[1720px] mx-auto relative z-10">
+      <div className="w-[90%] max-w-[1850px] mx-auto relative z-10">
         
         {/* Section Header */}
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-16">
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-16 border-b border-white/10 pb-8">
           <div className="space-y-3">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-racing-orange/10 border border-racing-orange/30 text-racing-orange text-xs font-bold tracking-wider uppercase">
               <BarChart2 className="w-3.5 h-3.5" />

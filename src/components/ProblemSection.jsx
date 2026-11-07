@@ -57,25 +57,32 @@ export default function ProblemSection() {
       <div className="absolute top-0 right-0 w-[550px] h-[550px] bg-racing-red/10 rounded-full blur-[170px] pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-[550px] h-[550px] bg-racing-orange/10 rounded-full blur-[170px] pointer-events-none" />
 
-      <div className="w-[92%] max-w-[1720px] mx-auto relative z-10">
+      <div className="w-[90%] max-w-[1850px] mx-auto relative z-10">
         
-        {/* Section Header */}
-        <div className="text-center max-w-4xl mx-auto mb-16 space-y-4">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-racing-red/10 border border-racing-red/30 text-racing-red text-xs font-bold tracking-wider uppercase">
-            <AlertTriangle className="w-3.5 h-3.5" />
-            O Gargalo Oculto do Setor Automotivo
+        {/* Section Header: Wide, Left-Aligned, Modern Auto Center */}
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-16 border-b border-white/10 pb-8">
+          <div className="space-y-3">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-racing-red/10 border border-racing-red/30 text-racing-red text-xs font-bold tracking-wider uppercase">
+              <AlertTriangle className="w-3.5 h-3.5" />
+              O Gargalo Oculto do Setor Automotivo
+            </div>
+
+            <h2 className="text-3xl sm:text-5xl font-display font-extrabold text-white tracking-tight">
+              Onde o faturamento da oficina costuma escapar{' '}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-racing-orange to-racing-red">
+                sem ninguém perceber?
+              </span>
+            </h2>
+
+            <p className="text-slate-300 text-base sm:text-lg max-w-3xl">
+              Em oficinas movimentadas, a equipe técnica e a recepção trabalham no limite. O maior desafio comercial não é atrair clientes novos, mas sim <strong className="text-white">acompanhar aqueles que já solicitaram um orçamento</strong>.
+            </p>
           </div>
 
-          <h2 className="text-3xl sm:text-5xl font-display font-extrabold text-white tracking-tight">
-            Onde o faturamento da oficina costuma escapar{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-racing-orange to-racing-red">
-              sem ninguém perceber?
-            </span>
-          </h2>
-
-          <p className="text-slate-300 text-base sm:text-lg max-w-3xl mx-auto">
-            Em oficinas movimentadas, a equipe técnica e a recepção trabalham no limite. O maior desafio comercial não é atrair clientes novos, mas sim **acompanhar aqueles que já solicitaram um orçamento**.
-          </p>
+          <div className="flex items-center gap-2 self-start lg:self-auto text-xs font-mono text-slate-400 bg-dark-850 px-4 py-2 rounded-xl border border-white/5">
+            <span className="w-2 h-2 rounded-full bg-racing-red animate-pulse" />
+            <span>Diagnóstico Comercial Automotivo</span>
+          </div>
         </div>
 
         {/* Problems Grid - 90% wide view */}

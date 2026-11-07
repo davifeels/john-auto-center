@@ -8,7 +8,7 @@ export default function FinalCta({ onOpenContactModal }) {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-gradient-to-r from-racing-orange/20 to-amber-500/10 rounded-full blur-[180px] pointer-events-none" />
 
       {/* 90% Wide Container */}
-      <div className="w-[92%] max-w-[1720px] mx-auto relative z-10 text-center">
+      <div className="w-[90%] max-w-[1850px] mx-auto relative z-10 text-center">
         
         <div className="p-10 sm:p-20 rounded-3xl bg-dark-850/90 border border-racing-orange/30 shadow-2xl relative overflow-hidden">
           {/* Subtle Ambient Top Border */}

@@ -116,25 +116,33 @@ export default function HowItWorks() {
       {/* Glow Effects */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-racing-orange/10 rounded-full blur-[200px] pointer-events-none" />
 
-      <div className="w-[92%] max-w-[1720px] mx-auto relative z-10">
+      <div className="w-[90%] max-w-[1850px] mx-auto relative z-10">
         
-        {/* Section Header */}
-        <div className="text-center max-w-4xl mx-auto mb-16 space-y-4">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-racing-orange/10 border border-racing-orange/30 text-racing-orange text-xs font-bold tracking-wider uppercase">
-            <Sparkles className="w-3.5 h-3.5" />
-            Fluxo Operacional Simples e Eficiente
+        {/* Section Header: Wide, Left-Aligned, Modern Auto Center */}
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-16 border-b border-white/10 pb-8">
+          <div className="space-y-3">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-racing-orange/10 border border-racing-orange/30 text-racing-orange text-xs font-bold tracking-wider uppercase">
+              <Sparkles className="w-3.5 h-3.5" />
+              Fluxo Operacional Simples e Eficiente
+            </div>
+
+            <h2 className="text-3xl sm:text-5xl font-display font-extrabold text-white tracking-tight">
+              Como funciona a recuperação na{' '}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-racing-orange to-amber-400">
+                John Auto Center
+              </span>
+            </h2>
+
+            <p className="text-slate-300 text-base sm:text-lg max-w-3xl">
+              Quatro etapas desenhadas para não atrapalhar a rotina dos mecânicos e assegurar que nenhuma oportunidade comercial adormeça no esquecimento.
+            </p>
           </div>
 
-          <h2 className="text-3xl sm:text-5xl font-display font-extrabold text-white tracking-tight">
-            Como funciona a recuperação na{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-racing-orange to-amber-400">
-              John Auto Center
-            </span>
-          </h2>
-
-          <p className="text-slate-300 text-base sm:text-lg max-w-3xl mx-auto">
-            Quatro etapas desenhadas para não atrapalhar a correria da equipe técnica e assegurar que nenhuma oportunidade comercial adormeça no esquecimento.
-          </p>
+          <div className="flex items-center gap-2 self-start lg:self-auto text-xs font-mono text-slate-300 bg-dark-850 px-4 py-2 rounded-xl border border-white/5">
+            <span className="text-racing-orange font-bold">4 Etapas Integradas</span>
+            <span className="text-slate-600">•</span>
+            <span>Da Recepção ao Box</span>
+          </div>
         </div>
 
         {/* 4 Interactive Step Selector Tabs - 90% wide view */}

@@ -10,7 +10,7 @@ export default function Footer() {
   return (
     <footer className="bg-dark-950 text-slate-400 border-t border-white/10 pt-20 pb-12 relative">
       {/* 90% Wide Container */}
-      <div className="w-[92%] max-w-[1720px] mx-auto">
+      <div className="w-[90%] max-w-[1850px] mx-auto">
         
         {/* Top Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 pb-14 border-b border-white/10">

@@ -48,25 +48,33 @@ export default function RoiCalculator({ onCtaClick }) {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[600px] bg-racing-orange/15 rounded-full blur-[190px] pointer-events-none" />
 
       {/* 90% Wide Container */}
-      <div className="w-[92%] max-w-[1720px] mx-auto relative z-10">
+      <div className="w-[90%] max-w-[1850px] mx-auto relative z-10">
         
-        {/* Section Header */}
-        <div className="text-center max-w-4xl mx-auto mb-16 space-y-4">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-racing-orange/10 border border-racing-orange/30 text-racing-orange text-xs font-bold tracking-wider uppercase">
-            <Calculator className="w-3.5 h-3.5" />
-            Simulador de Impacto Financeiro Comercial
+        {/* Section Header: Wide, Left-Aligned, Modern Auto Center */}
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-16 border-b border-white/10 pb-8">
+          <div className="space-y-3">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-racing-orange/10 border border-racing-orange/30 text-racing-orange text-xs font-bold tracking-wider uppercase">
+              <Calculator className="w-3.5 h-3.5" />
+              Simulador de Impacto Financeiro Comercial
+            </div>
+
+            <h2 className="text-3xl sm:text-5xl font-display font-extrabold text-white tracking-tight">
+              Quanto a John Auto Center pode{' '}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-racing-orange via-amber-400 to-racing-red">
+                resgatar por ano?
+              </span>
+            </h2>
+
+            <p className="text-slate-300 text-base sm:text-lg max-w-3xl">
+              Ajuste os parâmetros da rotina da sua oficina para simular o retorno financeiro potencial ao implementar um acompanhamento ativo e estruturado de orçamentos.
+            </p>
           </div>
 
-          <h2 className="text-3xl sm:text-5xl font-display font-extrabold text-white tracking-tight">
-            Quanto a John Auto Center pode{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-racing-orange via-amber-400 to-racing-red">
-              resgatar por ano?
-            </span>
-          </h2>
-
-          <p className="text-slate-300 text-base sm:text-lg max-w-3xl mx-auto">
-            Ajuste os parâmetros da rotina da sua oficina para simular o retorno financeiro potencial ao implementar um acompanhamento ativo e estruturado de orçamentos.
-          </p>
+          <div className="flex items-center gap-2 self-start lg:self-auto text-xs font-mono text-slate-300 bg-dark-850 px-4 py-2 rounded-xl border border-white/5">
+            <span className="text-emerald-400 font-bold">ROI Estimado</span>
+            <span className="text-slate-600">•</span>
+            <span>Alta Rentabilidade</span>
+          </div>
         </div>
 
         {/* Calculator Main Box - 90% wide view */}

@@ -99,25 +99,32 @@ export default function WhatsAppSimulator({ activeBudgetForChat }) {
       <div className="absolute bottom-10 right-10 w-[600px] h-[600px] bg-racing-orange/10 rounded-full blur-[180px] pointer-events-none" />
 
       {/* 90% Wide Container */}
-      <div className="w-[92%] max-w-[1720px] mx-auto relative z-10">
+      <div className="w-[90%] max-w-[1850px] mx-auto relative z-10">
         
-        {/* Section Header */}
-        <div className="text-center max-w-4xl mx-auto mb-16 space-y-4">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-bold tracking-wider uppercase">
-            <MessageSquare className="w-3.5 h-3.5" />
-            Recuperação Automatizada & Humanizada
+        {/* Section Header: Wide, Left-Aligned, Modern Auto Center */}
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-16 border-b border-white/10 pb-8">
+          <div className="space-y-3">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-bold tracking-wider uppercase">
+              <MessageSquare className="w-3.5 h-3.5" />
+              Recuperação Automatizada & Humanizada
+            </div>
+
+            <h2 className="text-3xl sm:text-5xl font-display font-extrabold text-white tracking-tight">
+              Acompanhamento Inteligente via{' '}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-200">
+                WhatsApp Oficial
+              </span>
+            </h2>
+
+            <p className="text-slate-300 text-base sm:text-lg max-w-3xl">
+              Veja na prática como a plataforma aborda clientes que solicitaram orçamento com mensagens educadas, personalizadas e no momento certo, transformando orçamentos parados em serviços agendados no elevador.
+            </p>
           </div>
 
-          <h2 className="text-3xl sm:text-5xl font-display font-extrabold text-white tracking-tight">
-            Acompanhamento Inteligente via{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-200">
-              WhatsApp Oficial
-            </span>
-          </h2>
-
-          <p className="text-slate-300 text-base sm:text-lg max-w-3xl mx-auto">
-            Veja na prática como a plataforma aborda clientes que solicitaram orçamento com mensagens educadas, personalizadas e no momento certo, transformando orçamentos parados em serviços agendados no elevador.
-          </p>
+          <div className="flex items-center gap-2 self-start lg:self-auto text-xs font-mono text-emerald-400 bg-dark-850 px-4 py-2 rounded-xl border border-emerald-500/20">
+            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+            <span>Simulador Conversacional Ativo</span>
+          </div>
         </div>
 
         {/* Simulator Grid - 90% wide view */}

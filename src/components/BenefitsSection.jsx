@@ -60,25 +60,33 @@ export default function BenefitsSection() {
       <div className="absolute bottom-0 right-1/4 w-[600px] h-[600px] bg-racing-orange/10 rounded-full blur-[190px] pointer-events-none" />
 
       {/* 90% Wide Container */}
-      <div className="w-[92%] max-w-[1720px] mx-auto relative z-10">
+      <div className="w-[90%] max-w-[1850px] mx-auto relative z-10">
         
-        {/* Section Header */}
-        <div className="text-center max-w-4xl mx-auto mb-16 space-y-4">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-racing-orange/10 border border-racing-orange/30 text-racing-orange text-xs font-bold tracking-wider uppercase">
-            <Sparkles className="w-3.5 h-3.5" />
-            Vantagens Competitivas Estratégicas
+        {/* Section Header: Wide, Left-Aligned, Modern Auto Center */}
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-16 border-b border-white/10 pb-8">
+          <div className="space-y-3">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-racing-orange/10 border border-racing-orange/30 text-racing-orange text-xs font-bold tracking-wider uppercase">
+              <Sparkles className="w-3.5 h-3.5" />
+              Vantagens Competitivas Estratégicas
+            </div>
+
+            <h2 className="text-3xl sm:text-5xl font-display font-extrabold text-white tracking-tight">
+              Por que a John Auto Center{' '}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-racing-orange to-amber-400">
+                sai na frente?
+              </span>
+            </h2>
+
+            <p className="text-slate-300 text-base sm:text-lg max-w-3xl">
+              Combinar excelência técnica mecânica com uma gestão comercial digitalizada é o segredo das oficinas automotivas de maior rentabilidade e prestígio no Brasil.
+            </p>
           </div>
 
-          <h2 className="text-3xl sm:text-5xl font-display font-extrabold text-white tracking-tight">
-            Por que a John Auto Center{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-racing-orange to-amber-400">
-              sai na frente?
-            </span>
-          </h2>
-
-          <p className="text-slate-300 text-base sm:text-lg max-w-3xl mx-auto">
-            Combinar excelência técnica mecânica com uma gestão comercial digitalizada é o segredo das oficinas automotivas de maior rentabilidade e prestígio no Brasil.
-          </p>
+          <div className="flex items-center gap-2 self-start lg:self-auto text-xs font-mono text-slate-300 bg-dark-850 px-4 py-2 rounded-xl border border-white/5">
+            <span className="text-racing-orange font-bold">Diferenciais Competitivos</span>
+            <span className="text-slate-600">•</span>
+            <span>Planaltina - DF</span>
+          </div>
         </div>
 
         {/* Benefits Grid - 90% wide view */}
